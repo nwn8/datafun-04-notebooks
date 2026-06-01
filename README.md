@@ -1,3 +1,6 @@
+# Author
+Nathan S
+
 # datafun-04-notebooks
 
 [![Workflow Guide](https://img.shields.io/badge/Pro--Guide-pro--analytics--02-green)](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)
