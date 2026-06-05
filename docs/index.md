@@ -23,3 +23,47 @@ to get these projects running on your machine.
   - [RESOURCES.md](./module/RESOURCES.md)
   - [seaborn-datasets.md](./module/seaborn-datasets.md)
   - [TROUBLESHOOTING.md](./module/TROUBLESHOOTING.md)
+
+
+## Custom Project
+
+
+### Dataset
+
+This project uses the Seaborn Taxis dataset. The dataset includes colums such as
+
+### Signals
+
+The primary signals used in this project were:
+
+* fare
+* tip
+* tolls
+* total
+* distance
+
+A custom signal was created by calculating the average distance for each taxi type (yellow or green)
+
+### Experiments
+
+I modified the original example project by creating a custom notebook (`eda_nate.ipynb`) and a custom Python application (`app_nate.py`).
+### Results
+
+Taxis data was used from Seaborn resulting in three charts to evaluatte the data.
+
+Conclusions from the Heatmap / Correlation chart include:
+ - Distance had a strong correlation to fare which is to be expected.
+ - Tipping had a weaker correlation to tolls than any other column implying if there were tolls in the trip the tip was less.
+
+Conclusions from scatterplot:
+ - The yellow and green cab data seems very evenly distributed
+ - There seems to be a consistent grouping for yellow around $50 regardless of distance.
+
+Conclusions from Boxplot:
+ - Green trips tend to be slightly longer (the median for green is higher than yellow)
+ - Green has a wider diversity of distances
+
+
+### Interpretation
+
+Taxi's have similar data from both Green and Yellow.  When looking further into the data there are some indications that Yellow has a strict price limit on rides within a certain distance while green cabs seem to drive a wider variety of distances.
